@@ -14,7 +14,7 @@ start(_StartType, _StartArgs) ->
                                       {'_', [{"/quote", handler, []}]}
                                      ]),
     {ok, _} = cowboy:start_clear(http,
-                                 [{port, 8080}],
+                                 [{port, 8228}],
                                  #{env => #{dispatch => Dispatch}}
                                 ),
     quotes_sup:start_link().
