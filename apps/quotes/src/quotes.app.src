@@ -1,0 +1,17 @@
+{application, quotes,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {quotes_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    cowboy,
+    hackney
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
